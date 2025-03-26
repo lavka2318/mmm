@@ -1,0 +1,164 @@
+
+.modalContent {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: var(--color-accent-100);
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent-900);
+}
+
+.input {
+  color: black;
+  height: 35px;
+  width: 100%;
+}
+
+.inputContainer {
+  padding-bottom: 10px;
+}
+
+.control {
+  display:flex;
+  align-items: center;
+
+  label {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.comments {
+  color: var(--color-danger-500);
+}
+
+.mydict div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 25px 10px;
+
+  label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--color-accent-900);
+    padding: 5px 0;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #fff;
+    text-align: center;
+    transition: background-color .5s ease;
+    height: 100%;
+  }
+}
+
+.mydict div label {
+  width: 33%;
+  flex-grow: 1;
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  background-color: var(--color-accent-700);
+}
+
+
+
+label:first-child span {
+  border-radius: .375em 0 0 .375em;
+}
+
+label:last-child span {
+  border-radius: 0 .375em .375em 0;
+}
+
+.label {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  color: black;
+  height: 35px;
+  width: 100%;
+}
+
+.giftContainer {
+  display: flex;
+  justify-content: center;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.checkbox__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#212121, #212121) padding-box,
+  linear-gradient(145deg,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.checkbox__input:checked + .checkbox__label .checkbox__custom {
+  background-image: linear-gradient(145deg,#e81cff, #40c9ff);
+  transform: rotate(45deg) scale(0.8);
+}
+
+.checkbox__label:hover .checkbox__custom {
+  transform: scale(1.2);
+}
+
