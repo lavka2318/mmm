@@ -1,0 +1,19 @@
+.linkClient {
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: var(--color-info-700);
+  }
+}
+.status {
+  display: flex;
+  align-items: center;
+}
+.removeIcon {
+  cursor: pointer;
+  &:hover {
+    path {
+      fill: var(--color-accent-700);
+    }
+  }
+}

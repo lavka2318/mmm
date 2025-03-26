@@ -1,0 +1,19 @@
+.text {
+  margin: 10px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  margin-top: 50px;
+}
+.date {
+  color: var(--color-dark-100);
+}

@@ -1,0 +1,30 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 200px;
+  margin: 10px 0;
+}
+
+.titleBasket {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.basketIcon {
+  margin-right: 2px;
+}
+
+.tableProductsForClient {
+  width: 100%;
+}
+
+.removeIcon {
+  cursor: pointer;
+  &:hover {
+    path {
+      fill: var(--color-danger-300);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.briefcase {
+  padding: 10px 20px;
+}
+.btnDownload {
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: 0.3s;
+  &:hover {
+    background-color: grey;
+  }
+}
+.headerTitle {
+  width: 100%;
+  font-size: 30px;
+  border-bottom: 1px solid var(--color-dark-100);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.button {
+  margin-bottom: 10px;
+}
+
+.tableTextEmpty {
+  padding: 100px;
+}
+
+.icon {
+  margin-right: 5px;
+}
