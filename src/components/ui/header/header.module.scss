@@ -1,0 +1,124 @@
+.headerRoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 3.75rem;
+  margin: 0 auto;
+  padding: 0.3rem 10px;
+}
+
+.sticky{
+  margin-bottom: 10px;
+  background-color: var(--color-dark-700);
+  border: 2px solid black;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+
+.link {
+  text-decoration: none;
+}
+.beta {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--color-firm-300);
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px 15px;
+  background-color: var(--color-firm-700);
+}
+.size {
+  font-size: 10px;
+}
+
+.burgerContainer {
+  text-align: center;
+  background-color: var(--color-dark-700);
+  border: 2px solid black;
+  z-index: 1000;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+
+  input {
+    display: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    margin: 0 auto;
+  }
+
+  span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+
+  input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+
+  input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width: 1150px) {
+  .burger {
+    display: block;
+  }
+
+  .sticky {
+    position: static;
+    z-index: 0;
+  }
+}
