@@ -52,7 +52,7 @@ export const CardProduct = ({ product }: CardProductProps) => {
           </div>
           {product.view} , {product.price} руб.<br/>
           Приоритет: {product.sortValue ?? 0}<br/>
-          { isPrivatePassVerified ? 'Закупочная цена: ' + product.purchasePrice ?? 0 + ' руб.' : ''}
+          { isPrivatePassVerified ? 'Закупочная цена: ' + (product.purchasePrice ?? 0) + ' руб.' : ''}
         </div>
         <TrashOutline
           className={s.removeIcon}
