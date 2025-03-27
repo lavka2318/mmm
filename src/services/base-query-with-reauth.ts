@@ -7,7 +7,7 @@ import type {
 import { fetchBaseQuery } from "@reduxjs/toolkit/query";
 import { Mutex } from "async-mutex";
 
-export const API_URL = "api/";
+export const API_URL = "/api/";
 // export const API_URL = "http://localhost:5000";
 const mutex = new Mutex();
 const baseQuery = fetchBaseQuery({
